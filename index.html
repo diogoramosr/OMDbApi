@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="alternate" hreflang="en-gb" href="http://en-gb.site.com" />
+    <link rel="alternate" hreflang="pt-br" href="http://pt-br.site.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <section class="max-w-5xl mx-auto p-1 mt-10">
+        <div class=" p-2 flex flex-col items-center justify-center">
+            <div class=" p-1 w-full text-center mb-5">
+                <h1 class="text-4xl mb-2 font-bold mb-6">
+                    Find your movie
+                </h1>
+                <p class="text-base text-gray-400">
+                    Search for movies, series, documentaries, animes and much more! 
+                </p>
+            </div>
+            <div class=" p-1 flex gap-2 items-center justify-around flex-wrap w-[25rem]">
+                <input id="searchTxt" type="text" name="pesquisa"
+                    class="shadow-md w-[20rem] p-2 focus:outline-none rounded-md" placeholder="Search...">
+                <button id="searchBtn" type="submit" value="Pesquisar" class="cursor-pointer "><i
+                        class="fas fa-search text-xl"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-5xl mx-auto p-1 mt-3">
+        <div class=" p-2 flex flex-col items-center justify-center">
+            <h2 class="text-3xl font-bold mb-6">
+                Search results:
+            </h2>
+            <div id="filmes" class="p-1 w-full h-full flex flex-col items-center items-center justify-between gap-4">
+
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
